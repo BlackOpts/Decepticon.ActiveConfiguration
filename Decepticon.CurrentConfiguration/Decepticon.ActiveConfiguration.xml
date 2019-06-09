@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Decepticon.ActiveConfiguration</name>
+    </assembly>
+    <members>
+        <member name="T:Decepticon.ActiveConfiguration">
+            <summary>
+            Represents the current build configuration object
+            </summary>
+        </member>
+        <member name="P:Decepticon.ActiveConfiguration.Value">
+            <summary>
+            Get the current configuration name when the project was built.
+            Returns null on errors.
+            </summary>
+        </member>
+    </members>
+</doc>

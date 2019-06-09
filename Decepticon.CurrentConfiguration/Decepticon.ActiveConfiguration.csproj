@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <Configurations>Debug;Release;Staging</Configurations>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageIconUrl>https://i.ibb.co/RgV6TPr/decepticon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://licenses.nuget.org/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/BlackOpts/Decepticon.ActiveConfiguration</PackageProjectUrl>
+    <Copyright>2019</Copyright>
+    <RepositoryUrl>https://github.com/BlackOpts/Decepticon.ActiveConfiguration</RepositoryUrl>
+    <PackageReleaseNotes>Required .NetFramework 4.6 or higher or .NetCore 1.0 or higher</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Code\Decepticon.Github\decepticon.currentconfiguration\Decepticon.CurrentConfiguration\Decepticon.ActiveConfiguration.xml</DocumentationFile>
+  </PropertyGroup>
+
+
+  <!--
+  
+  <ItemGroup>
+    <BuildTimeFile Include="$(OutputPath)/CurrentConfig.txt" />
+  </ItemGroup>
+  <Target Name="ConfigureEnvironment" BeforeTargets="Build">
+    <Message Importance="High" Text="Configure build time configuration for '$(Configuration)'" />
+    <WriteLinesToFile File="@(BuildTimeFile)" Lines="$(Configuration)" Overwrite="true" Encoding="Unicode" />
+  </Target>-->
+</Project>

@@ -1,0 +1,9 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <BuildTimeFile Include="$(OutputPath)/CurrentConfig.txt" />
+  </ItemGroup>
+  <Target Name="ConfigureEnvironment" BeforeTargets="Build">
+    <Message Importance="High" Text="Configure build time configuration for '$(Configuration)'" />
+    <WriteLinesToFile File="@(BuildTimeFile)" Lines="$(Configuration)" Overwrite="true" Encoding="Unicode" />
+  </Target>
+</Project>
