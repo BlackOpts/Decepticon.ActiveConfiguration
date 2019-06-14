@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Decepticon.ActiveConfiguration</id>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <title>Decepticon.ActiveConfiguration</title>
     <authors>Arrak Rukkharat</authors>
     <owners>Arrak Rukkharat</owners>
@@ -10,7 +10,7 @@
     <iconUrl>https://i.ibb.co/RgV6TPr/decepticon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Provides current configuration value at build time right in Visual Studio as well as application runtime. This can be utilized to identify test environment for automation testing.</description>
-    <releaseNotes>Required .NetFramework 4.6 or higher or any version of .NetCore</releaseNotes>
+    <releaseNotes>Bug fix: issue with .NetFramework</releaseNotes>
     <copyright>Copyright 2019</copyright>
     <license type="expression">MIT</license>
     <tags>active runtime current configuration environment automation test testing build time transform json xml</tags>
@@ -33,14 +33,20 @@
     <file src="Decepticon.ActiveConfiguration.xml" target="lib/netcoreapp2.1" />
     <file src="Decepticon.ActiveConfiguration.xml" target="lib/netcoreapp2.2" />
 
-    <file src="obj\Debug\netstandard1.3\Decepticon.ActiveConfiguration.dll" target="lib/net46" />
-    <file src="obj\Debug\netstandard1.3\Decepticon.ActiveConfiguration.dll" target="lib/net461" />
-    <file src="obj\Debug\netstandard1.3\Decepticon.ActiveConfiguration.dll" target="lib/net462" />
-    <file src="obj\Debug\netstandard1.3\Decepticon.ActiveConfiguration.dll" target="lib/net47" />
-    <file src="obj\Debug\netstandard1.3\Decepticon.ActiveConfiguration.dll" target="lib/net471" />
-    <file src="obj\Debug\netstandard1.3\Decepticon.ActiveConfiguration.dll" target="lib/net472" />
-    <file src="obj\Debug\netstandard1.3\Decepticon.ActiveConfiguration.dll" target="lib/net48" />
+    <file src="obj\Debug\net45\Decepticon.ActiveConfiguration.dll" target="lib/net45" />
+    <file src="obj\Debug\net45\Decepticon.ActiveConfiguration.dll" target="lib/net451" />
+    <file src="obj\Debug\net45\Decepticon.ActiveConfiguration.dll" target="lib/net452" />
+    <file src="obj\Debug\net45\Decepticon.ActiveConfiguration.dll" target="lib/net46" />
+    <file src="obj\Debug\net45\Decepticon.ActiveConfiguration.dll" target="lib/net461" />
+    <file src="obj\Debug\net45\Decepticon.ActiveConfiguration.dll" target="lib/net462" />
+    <file src="obj\Debug\net45\Decepticon.ActiveConfiguration.dll" target="lib/net47" />
+    <file src="obj\Debug\net45\Decepticon.ActiveConfiguration.dll" target="lib/net471" />
+    <file src="obj\Debug\net45\Decepticon.ActiveConfiguration.dll" target="lib/net472" />
+    <file src="obj\Debug\net45\Decepticon.ActiveConfiguration.dll" target="lib/net48" />
 
+    <file src="Decepticon.ActiveConfiguration.xml" target="lib/net45" />
+    <file src="Decepticon.ActiveConfiguration.xml" target="lib/net451" />
+    <file src="Decepticon.ActiveConfiguration.xml" target="lib/net452" />
     <file src="Decepticon.ActiveConfiguration.xml" target="lib/net46" />
     <file src="Decepticon.ActiveConfiguration.xml" target="lib/net461" />
     <file src="Decepticon.ActiveConfiguration.xml" target="lib/net462" />
