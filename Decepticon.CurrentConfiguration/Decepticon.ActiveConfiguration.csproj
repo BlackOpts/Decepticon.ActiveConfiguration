@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <Configurations>Debug;Release;Staging</Configurations>
+    <Configurations>Debug;Release;Staging;Development</Configurations>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageIconUrl>https://i.ibb.co/RgV6TPr/decepticon.png</PackageIconUrl>
@@ -17,9 +17,13 @@
     <DocumentationFile>C:\Code\Decepticon.Github\decepticon.currentconfiguration\Decepticon.CurrentConfiguration\Decepticon.ActiveConfiguration.xml</DocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|AnyCPU'">
+    <DocumentationFile>C:\Code\Decepticon.Github\decepticon.currentconfiguration\Decepticon.CurrentConfiguration\Decepticon.ActiveConfiguration.xml</DocumentationFile>
+  </PropertyGroup>
+
 
   <!--
-  
+  $(TEMP)
   <ItemGroup>
     <BuildTimeFile Include="$(OutputPath)/CurrentConfig.txt" />
   </ItemGroup>
@@ -27,4 +31,6 @@
     <Message Importance="High" Text="Configure build time configuration for '$(Configuration)'" />
     <WriteLinesToFile File="@(BuildTimeFile)" Lines="$(Configuration)" Overwrite="true" Encoding="Unicode" />
   </Target>-->
+
+  
 </Project>

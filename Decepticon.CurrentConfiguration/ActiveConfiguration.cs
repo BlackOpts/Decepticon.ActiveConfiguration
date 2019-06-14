@@ -15,16 +15,16 @@ namespace Decepticon
         {
             get
             {
+                // Try to get the value from the configuration variable
                 try
                 {
-                    var path = Directory.GetCurrentDirectory() + "\\CurrentConfig.txt";
+                    var path = Path.GetTempPath() + "Decepticon.log";
                     var configName = File.ReadAllText(path);
                     return configName != null ? configName.Trim() : null;
                 }
-                catch (FileNotFoundException)
-                {
-                    return null;
-                }
+                catch { }
+                
+                return null;
             }
         }
     }
