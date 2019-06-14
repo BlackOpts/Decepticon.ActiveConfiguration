@@ -3,11 +3,11 @@
 Provides current configuration value at build time that can be utilized for changing test environment for automation testing. The value is the current configuration dropdown value or the configuration variable.
 
 ### Requirements
-Requires .NetFramework 4.6 or higher or any version of .NetCore
+Requires .NetFramework 4.5 or higher or any version of .NetCore
 
 ### Usage
 
-If you have `Debug`, `Release`, `Staging` in the configuration dropdown, then select 'Staging'. Then build the project. Then do
+If you have `Debug`, `Release`, `Staging` in the configuration dropdown, then select `Staging`. __Then build the project__. Then do
 
 ```csharp
 string stagingConfigName = ActiveConfiguration.Value;
